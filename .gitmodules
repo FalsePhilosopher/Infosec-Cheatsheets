@@ -1,0 +1,147 @@
+[submodule "Active-Directory-Exploitation-Cheat-Sheet"]
+	path = Active-Directory-Exploitation-Cheat-Sheet
+	url = https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet
+[submodule "https:/github.com/LeCoupa/awesome-cheatsheets"]
+	path = https:/github.com/LeCoupa/awesome-cheatsheets
+	url = https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
+[submodule "awesome-cicd-security"]
+	path = awesome-cicd-security
+	url = https://github.com/myugan/awesome-cicd-security
+[submodule "awesome-cloud-security"]
+	path = awesome-cloud-security
+	url = https://github.com/4ndersonLin/awesome-cloud-security
+[submodule "awesome-guidelines"]
+	path = awesome-guidelines
+	url = https://github.com/Kristories/awesome-guidelines
+[submodule "awesome-hacker-search-engines"]
+	path = awesome-hacker-search-engines
+	url = https://github.com/edoardottt/awesome-hacker-search-engines
+[submodule "Awesome-Hacking"]
+	path = Awesome-Hacking
+	url = https://github.com/Hack-with-Github/Awesome-Hacking
+[submodule "Awesome-Hacking-Resources"]
+	path = Awesome-Hacking-Resources
+	url = https://github.com/vitalysim/Awesome-Hacking-Resources
+[submodule "awesome-ideation-tools"]
+	path = awesome-ideation-tools
+	url = https://github.com/zazaalaza/awesome-ideation-tools
+[submodule "awesome-osint"]
+	path = awesome-osint
+	url = https://github.com/jivoi/awesome-osint
+[submodule "awesome-pastebin"]
+	path = awesome-pastebin
+	url = https://github.com/lorien/awesome-pastebin
+[submodule "awesome-pentest"]
+	path = awesome-pentest
+	url = https://github.com/enaqx/awesome-pentest
+[submodule "awesome-pentest-cheat-sheets"]
+	path = awesome-pentest-cheat-sheets
+	url = https://github.com/coreb1t/awesome-pentest-cheat-sheets
+[submodule "awesome-privilege-escalation"]
+	path = awesome-privilege-escalation
+	url = https://github.com/m0nad/awesome-privilege-escalation
+[submodule "Awesome-RCE-techniques"]
+	path = Awesome-RCE-techniques
+	url = https://github.com/p0dalirius/Awesome-RCE-techniques
+[submodule "Awesome-RedTeam-Cheatsheet"]
+	path = Awesome-RedTeam-Cheatsheet
+	url = https://github.com/RistBS/Awesome-RedTeam-Cheatsheet
+[submodule "awesome-security"]
+	path = awesome-security
+	url = https://github.com/sbilly/awesome-security
+[submodule "awesome-threat-detection"]
+	path = awesome-threat-detection
+	url = https://github.com/0x4D31/awesome-threat-detection
+[submodule "Bash-Oneliner"]
+	path = Bash-Oneliner
+	url = https://github.com/onceupon/Bash-Oneliner
+[submodule "big-list-of-naughty-strings"]
+	path = big-list-of-naughty-strings
+	url = https://github.com/minimaxir/big-list-of-naughty-strings
+[submodule "cheatsheets"]
+	path = cheatsheets
+	url = https://github.com/cheat/cheatsheets
+[submodule "cheat.sh"]
+	path = cheat.sh
+	url = https://github.com/chubin/cheat.sh
+[submodule "cheat-sheets"]
+	path = cheat-sheets
+	url = https://github.com/0xn3va/cheat-sheets
+[submodule "CheatSheetSeries"]
+	path = CheatSheetSeries
+	url = https://github.com/OWASP/CheatSheetSeries
+[submodule "command-injection-payload-list"]
+	path = command-injection-payload-list
+	url = https://github.com/payloadbox/command-injection-payload-list
+[submodule "DefaultCreds-cheat-sheet"]
+	path = DefaultCreds-cheat-sheet
+	url = https://github.com/ihebski/DefaultCreds-cheat-sheet
+[submodule "Dorks-collections-list"]
+	path = Dorks-collections-list
+	url = https://github.com/cipher387/Dorks-collections-list
+[submodule "exploits"]
+	path = exploits
+	url = https://github.com/chacka0101/exploits
+[submodule "HackAllTheThings"]
+	path = HackAllTheThings
+	url = https://github.com/akenofu/HackAllTheThings
+[submodule "Hacking_Tools_Cheat_Sheet"]
+	path = Hacking_Tools_Cheat_Sheet
+	url = https://github.com/CompassSecurity/Hacking_Tools_Cheat_Sheet
+[submodule "hacktricks"]
+	path = hacktricks
+	url = https://github.com/carlospolop/hacktricks
+[submodule "Huge-Collection-of-CheatSheet"]
+	path = Huge-Collection-of-CheatSheet
+	url = https://github.com/JonnyBanana/Huge-Collection-of-CheatSheet
+[submodule "investigations"]
+	path = investigations
+	url = https://github.com/tarahmarie/investigations
+[submodule "ios-penetration-testing-cheat-sheet"]
+	path = ios-penetration-testing-cheat-sheet
+	url = https://github.com/ivan-sincek/ios-penetration-testing-cheat-sheet
+[submodule "Offensive-Reverse-Shell-Cheat-Sheet"]
+	path = Offensive-Reverse-Shell-Cheat-Sheet
+	url = https://github.com/d4t4s3c/Offensive-Reverse-Shell-Cheat-Sheet
+[submodule "OSCP"]
+	path = OSCP
+	url = https://github.com/0xsyr0/OSCP
+[submodule "PayloadsAllTheThings"]
+	path = PayloadsAllTheThings
+	url = https://github.com/swisskyrepo/PayloadsAllTheThings
+[submodule "pentest-cheat-sheet"]
+	path = pentest-cheat-sheet
+	url = https://github.com/l3ickey/pentest-cheat-sheet
+[submodule "RedTeaming_CheatSheet"]
+	path = RedTeaming_CheatSheet
+	url = https://github.com/0xJs/RedTeaming_CheatSheet
+[submodule "Red-Team-Infrastructure-Wiki"]
+	path = Red-Team-Infrastructure-Wiki
+	url = https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki
+[submodule "SecLists"]
+	path = SecLists
+	url = https://github.com/danielmiessler/SecLists
+[submodule "SysmonCommunityGuide"]
+	path = SysmonCommunityGuide
+	url = https://github.com/trustedsec/SysmonCommunityGuide
+[submodule "terminal-adventures"]
+	path = terminal-adventures
+	url = https://github.com/jamesengleback/terminal-adventures
+[submodule "the-book-of-secret-knowledge"]
+	path = the-book-of-secret-knowledge
+	url = https://github.com/trimstray/the-book-of-secret-knowledge
+[submodule "Web-Attack-Cheat-Sheet"]
+	path = Web-Attack-Cheat-Sheet
+	url = https://github.com/riramar/Web-Attack-Cheat-Sheet
+[submodule "wifi-arsenal"]
+	path = wifi-arsenal
+	url = https://github.com/0x90/wifi-arsenal
+[submodule "Win32_Offensive_Cheatsheet"]
+	path = Win32_Offensive_Cheatsheet
+	url = https://github.com/matthieu-hackwitharts/Win32_Offensive_Cheatsheet
+[submodule "windows_reg"]
+	path = windows_reg
+	url = https://github.com/jmau111-org/windows_reg
+[submodule "Active-Directory-Exploitation-Cheat-Sheet2"]
+	path = Active-Directory-Exploitation-Cheat-Sheet2
+	url = https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
