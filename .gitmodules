@@ -1,9 +1,6 @@
 [submodule "Active-Directory-Exploitation-Cheat-Sheet"]
 	path = Active-Directory-Exploitation-Cheat-Sheet
 	url = https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet
-[submodule "https:/github.com/LeCoupa/awesome-cheatsheets"]
-	path = https:/github.com/LeCoupa/awesome-cheatsheets
-	url = https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
 [submodule "awesome-cicd-security"]
 	path = awesome-cicd-security
 	url = https://github.com/myugan/awesome-cicd-security
@@ -145,3 +142,6 @@
 [submodule "Active-Directory-Exploitation-Cheat-Sheet2"]
 	path = Active-Directory-Exploitation-Cheat-Sheet2
 	url = https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
+[submodule "awesome-cheatsheets"]
+	path = awesome-cheatsheets
+	url = https://github.com/LeCoupa/awesome-cheatsheets
