@@ -76,9 +76,6 @@
 [submodule "Dorks-collections-list"]
 	path = Dorks-collections-list
 	url = https://github.com/cipher387/Dorks-collections-list
-[submodule "exploits"]
-	path = exploits
-	url = https://github.com/chacka0101/exploits
 [submodule "HackAllTheThings"]
 	path = HackAllTheThings
 	url = https://github.com/akenofu/HackAllTheThings
