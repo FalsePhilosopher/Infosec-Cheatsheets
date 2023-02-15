@@ -202,3 +202,21 @@
 [submodule "BlackHatPowershell"]
 	path = BlackHatPowershell
 	url = https://github.com/offport/BlackHatPowershell
+[submodule "awesome-cybersecurity-blueteam"]
+	path = awesome-cybersecurity-blueteam
+	url = https://github.com/fabacab/awesome-cybersecurity-blueteam
+[submodule "Blue-Team-Notes"]
+	path = Blue-Team-Notes
+	url = https://github.com/Purp1eW0lf/Blue-Team-Notes
+[submodule "awesome-mobile-security"]
+	path = awesome-mobile-security
+	url = https://github.com/vaib25vicky/awesome-mobile-security
+[submodule "RedTeaming-Tactics-and-Techniques"]
+	path = RedTeaming-Tactics-and-Techniques
+	url = https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques
+[submodule "RedTeam-Tools"]
+	path = RedTeam-Tools
+	url = https://github.com/A-poc/RedTeam-Tools
+[submodule "BlueTeam-Tools"]
+	path = BlueTeam-Tools
+	url = https://github.com/A-poc/BlueTeam-Tools

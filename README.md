@@ -17,6 +17,8 @@ https://github.com/myugan/awesome-cicd-security
 
 https://github.com/4ndersonLin/awesome-cloud-security
 
+https://github.com/fabacab/awesome-cybersecurity-blueteam
+
 https://github.com/Kristories/awesome-guidelines
 
 https://github.com/edoardottt/awesome-hacker-search-engines
