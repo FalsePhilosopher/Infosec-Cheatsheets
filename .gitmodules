@@ -145,3 +145,60 @@
 [submodule "awesome-cheatsheets"]
 	path = awesome-cheatsheets
 	url = https://github.com/LeCoupa/awesome-cheatsheets
+[submodule "thc-tips-tricks-hacks-cheat-sheet"]
+	path = thc-tips-tricks-hacks-cheat-sheet
+	url = https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet
+[submodule "JustTryHarder"]
+	path = JustTryHarder
+	url = https://github.com/sinfulz/JustTryHarder
+[submodule "Active-Directory-Cheat-Sheet3"]
+	path = Active-Directory-Cheat-Sheet3
+	url = https://github.com/OriolOriolOriol/Active-Directory-Cheat-Sheet
+[submodule "JustEvadeBro"]
+	path = JustEvadeBro
+	url = https://github.com/sinfulz/JustEvadeBro
+[submodule "JustBreakIn"]
+	path = JustBreakIn
+	url = https://github.com/sinfulz/JustBreakIn
+[submodule "blue-team"]
+	path = blue-team
+	url = https://github.com/irblueteam/blue-team
+[submodule "chsheets"]
+	path = chsheets
+	url = https://github.com/OfWolfAndMan/chsheets
+[submodule "BlueTeamCheatSheet_ChrisDavis"]
+	path = BlueTeamCheatSheet_ChrisDavis
+	url = https://github.com/gerryguy311/BlueTeamCheatSheet_ChrisDavis
+[submodule "blue-team-wiki"]
+	path = blue-team-wiki
+	url = https://github.com/sans-blue-team/blue-team-wiki
+[submodule "NodeJS-Red-Team-Cheat-Sheet"]
+	path = NodeJS-Red-Team-Cheat-Sheet
+	url = https://github.com/aadityapurani/NodeJS-Red-Team-Cheat-Sheet
+[submodule "rtfm"]
+	path = rtfm
+	url = https://github.com/droberson/rtfm
+[submodule "CobaltStrike_RedTeam_CheatSheet"]
+	path = CobaltStrike_RedTeam_CheatSheet
+	url = https://github.com/wsummerhill/CobaltStrike_RedTeam_CheatSheet
+[submodule "Windows-Red-Team-Cheat-Sheet"]
+	path = Windows-Red-Team-Cheat-Sheet
+	url = https://github.com/morph3/Windows-Red-Team-Cheat-Sheet
+[submodule "RedTeamMemory"]
+	path = RedTeamMemory
+	url = https://github.com/chrismaddalena/RedTeamMemory
+[submodule "Redsheet"]
+	path = Redsheet
+	url = https://github.com/expl0itabl3/Redsheet
+[submodule "irredteam.github.io"]
+	path = irredteam.github.io
+	url = https://github.com/irredteam/irredteam.github.io
+[submodule "Offensive-Pentesting-Host"]
+	path = Offensive-Pentesting-Host
+	url = https://github.com/InfoSecWarrior/Offensive-Pentesting-Host
+[submodule "JustGetDA"]
+	path = JustGetDA
+	url = https://github.com/sinfulz/JustGetDA
+[submodule "BlackHatPowershell"]
+	path = BlackHatPowershell
+	url = https://github.com/offport/BlackHatPowershell
