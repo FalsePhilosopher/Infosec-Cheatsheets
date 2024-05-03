@@ -103,9 +103,6 @@
 [submodule "PayloadsAllTheThings"]
 	path = PayloadsAllTheThings
 	url = https://github.com/swisskyrepo/PayloadsAllTheThings
-[submodule "pentest-cheat-sheet"]
-	path = pentest-cheat-sheet
-	url = https://github.com/l3ickey/pentest-cheat-sheet
 [submodule "RedTeaming_CheatSheet"]
 	path = RedTeaming_CheatSheet
 	url = https://github.com/0xJs/RedTeaming_CheatSheet
