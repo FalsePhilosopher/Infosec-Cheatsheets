@@ -39,6 +39,8 @@ https://github.com/coreb1t/awesome-pentest-cheat-sheets
 
 https://github.com/m0nad/awesome-privilege-escalation
 
+https://github.com/alphaSeclab/awesome-rat
+
 https://github.com/p0dalirius/Awesome-RCE-techniques
 
 https://github.com/RistBS/Awesome-RedTeam-Cheatsheet
