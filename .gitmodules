@@ -7,23 +7,23 @@
 [submodule "Active-Directory-Cheat-Sheet3"]
 	path = Active-Directory-Cheat-Sheet3
 	url = https://github.com/OriolOriolOriol/Active-Directory-Cheat-Sheet
-[submodule "awesome-cheatsheets"]
-	path = awesome-cheatsheets
+[submodule "Awesome-cheatsheets"]
+	path = Awesome-cheatsheets
 	url = https://github.com/LeCoupa/awesome-cheatsheets
-[submodule "awesome-cicd-security"]
-	path = awesome-cicd-security
+[submodule "Awesome-cicd-security"]
+	path = Awesome-cicd-security
 	url = https://github.com/myugan/awesome-cicd-security
-[submodule "awesome-cloud-security"]
-	path = awesome-cloud-security
+[submodule "Awesome-cloud-security"]
+	path = Awesome-cloud-security
 	url = https://github.com/4ndersonLin/awesome-cloud-security
-[submodule "awesome-cybersecurity-blueteam"]
-	path = awesome-cybersecurity-blueteam
+[submodule "Awesome-cybersecurity-blueteam"]
+	path = Awesome-cybersecurity-blueteam
 	url = https://github.com/fabacab/awesome-cybersecurity-blueteam
-[submodule "awesome-guidelines"]
-	path = awesome-guidelines
+[submodule "Awesome-guidelines"]
+	path = Awesome-guidelines
 	url = https://github.com/Kristories/awesome-guidelines
-[submodule "awesome-hacker-search-engines"]
-	path = awesome-hacker-search-engines
+[submodule "Awesome-hacker-search-engines"]
+	path = Awesome-hacker-search-engines
 	url = https://github.com/edoardottt/awesome-hacker-search-engines
 [submodule "Awesome-Hacking"]
 	path = Awesome-Hacking
@@ -31,26 +31,26 @@
 [submodule "Awesome-Hacking-Resources"]
 	path = Awesome-Hacking-Resources
 	url = https://github.com/vitalysim/Awesome-Hacking-Resources
-[submodule "awesome-ideation-tools"]
-	path = awesome-ideation-tools
+[submodule "Awesome-ideation-tools"]
+	path = Awesome-ideation-tools
 	url = https://github.com/zazaalaza/awesome-ideation-tools
-[submodule "awesome-mobile-security"]
-	path = awesome-mobile-security
+[submodule "Awesome-mobile-security"]
+	path = Awesome-mobile-security
 	url = https://github.com/vaib25vicky/awesome-mobile-security
-[submodule "awesome-osint"]
-	path = awesome-osint
+[submodule "Awesome-osint"]
+	path = Awesome-osint
 	url = https://github.com/jivoi/awesome-osint
-[submodule "awesome-pastebin"]
-	path = awesome-pastebin
+[submodule "Awesome-pastebin"]
+	path = Awesome-pastebin
 	url = https://github.com/lorien/awesome-pastebin
-[submodule "awesome-pentest"]
-	path = awesome-pentest
+[submodule "Awesome-pentest"]
+	path = Awesome-pentest
 	url = https://github.com/enaqx/awesome-pentest
-[submodule "awesome-pentest-cheat-sheets"]
-	path = awesome-pentest-cheat-sheets
+[submodule "Awesome-pentest-cheat-sheets"]
+	path = Awesome-pentest-cheat-sheets
 	url = https://github.com/coreb1t/awesome-pentest-cheat-sheets
-[submodule "awesome-privilege-escalation"]
-	path = awesome-privilege-escalation
+[submodule "Awesome-privilege-escalation"]
+	path = Awesome-privilege-escalation
 	url = https://github.com/m0nad/awesome-privilege-escalation
 [submodule "Awesome-RCE-techniques"]
 	path = Awesome-RCE-techniques
@@ -58,23 +58,23 @@
 [submodule "Awesome-RedTeam-Cheatsheet"]
 	path = Awesome-RedTeam-Cheatsheet
 	url = https://github.com/RistBS/Awesome-RedTeam-Cheatsheet
-[submodule "awesome-security"]
-	path = awesome-security
+[submodule "Awesome-security"]
+	path = Awesome-security
 	url = https://github.com/sbilly/awesome-security
-[submodule "awesome-threat-detection"]
-	path = awesome-threat-detection
+[submodule "Awesome-threat-detection"]
+	path = Awesome-threat-detection
 	url = https://github.com/0x4D31/awesome-threat-detection
 [submodule "Bash-Oneliner"]
 	path = Bash-Oneliner
 	url = https://github.com/onceupon/Bash-Oneliner
-[submodule "big-list-of-naughty-strings"]
-	path = big-list-of-naughty-strings
+[submodule "Big-list-of-naughty-strings"]
+	path = Big-list-of-naughty-strings
 	url = https://github.com/minimaxir/big-list-of-naughty-strings
 [submodule "BlackHatPowershell"]
 	path = BlackHatPowershell
 	url = https://github.com/offport/BlackHatPowershell
-[submodule "blue-team"]
-	path = blue-team
+[submodule "Blue-team"]
+	path = Blue-team
 	url = https://github.com/irblueteam/blue-team
 [submodule "BlueTeamCheatSheet_ChrisDavis"]
 	path = BlueTeamCheatSheet_ChrisDavis
@@ -85,20 +85,20 @@
 [submodule "BlueTeam-Tools"]
 	path = BlueTeam-Tools
 	url = https://github.com/A-poc/BlueTeam-Tools
-[submodule "blue-team-wiki"]
-	path = blue-team-wiki
+[submodule "Blue-team-wiki"]
+	path = Blue-team-wiki
 	url = https://github.com/sans-blue-team/blue-team-wiki
-[submodule "cheatsheets"]
-	path = cheatsheets
+[submodule "Cheatsheets"]
+	path = Cheatsheets
 	url = https://github.com/cheat/cheatsheets
-[submodule "cheat.sh"]
-	path = cheat.sh
+[submodule "Cheat.sh"]
+	path = Cheat.sh
 	url = https://github.com/chubin/cheat.sh
-[submodule "chsheets"]
-	path = chsheets
+[submodule "Chsheets"]
+	path = Chsheets
 	url = https://github.com/OfWolfAndMan/chsheets
-[submodule "cheat-sheets"]
-	path = cheat-sheets
+[submodule "Cheat-sheets"]
+	path = Cheat-sheets
 	url = https://github.com/0xn3va/cheat-sheets
 [submodule "CheatSheetSeries"]
 	path = CheatSheetSeries
@@ -106,8 +106,8 @@
 [submodule "CobaltStrike_RedTeam_CheatSheet"]
 	path = CobaltStrike_RedTeam_CheatSheet
 	url = https://github.com/wsummerhill/CobaltStrike_RedTeam_CheatSheet
-[submodule "command-injection-payload-list"]
-	path = command-injection-payload-list
+[submodule "Command-injection-payload-list"]
+	path = Command-injection-payload-list
 	url = https://github.com/payloadbox/command-injection-payload-list
 [submodule "DefaultCreds-cheat-sheet"]
 	path = DefaultCreds-cheat-sheet
@@ -121,20 +121,20 @@
 [submodule "Hacking_Tools_Cheat_Sheet"]
 	path = Hacking_Tools_Cheat_Sheet
 	url = https://github.com/CompassSecurity/Hacking_Tools_Cheat_Sheet
-[submodule "hacktricks"]
-	path = hacktricks
+[submodule "Hacktricks"]
+	path = Hacktricks
 	url = https://github.com/carlospolop/hacktricks
 [submodule "Huge-Collection-of-CheatSheet"]
 	path = Huge-Collection-of-CheatSheet
 	url = https://github.com/JonnyBanana/Huge-Collection-of-CheatSheet
-[submodule "investigations"]
-	path = investigations
+[submodule "Investigations"]
+	path = Investigations
 	url = https://github.com/tarahmarie/investigations
-[submodule "ios-penetration-testing-cheat-sheet"]
-	path = ios-penetration-testing-cheat-sheet
+[submodule "Ios-penetration-testing-cheat-sheet"]
+	path = Ios-penetration-testing-cheat-sheet
 	url = https://github.com/ivan-sincek/ios-penetration-testing-cheat-sheet
-[submodule "irredteam.github.io"]
-	path = irredteam.github.io
+[submodule "Irredteam.github.io"]
+	path = Irredteam.github.io
 	url = https://github.com/irredteam/irredteam.github.io
 [submodule "JustBreakIn"]
 	path = JustBreakIn
@@ -181,8 +181,8 @@
 [submodule "RedTeam-Tools"]
 	path = RedTeam-Tools
 	url = https://github.com/A-poc/RedTeam-Tools
-[submodule "rtfm"]
-	path = rtfm
+[submodule "RTFM"]
+	path = RTFM
 	url = https://github.com/droberson/rtfm
 [submodule "SecLists"]
 	path = SecLists
@@ -190,14 +190,14 @@
 [submodule "SysmonCommunityGuide"]
 	path = SysmonCommunityGuide
 	url = https://github.com/trustedsec/SysmonCommunityGuide
-[submodule "terminal-adventures"]
-	path = terminal-adventures
+[submodule "Terminal-adventures"]
+	path = Terminal-adventures
 	url = https://github.com/jamesengleback/terminal-adventures
-[submodule "thc-tips-tricks-hacks-cheat-sheet"]
-	path = thc-tips-tricks-hacks-cheat-sheet
+[submodule "Thc-tips-tricks-hacks-cheat-sheet"]
+	path = Thc-tips-tricks-hacks-cheat-sheet
 	url = https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet
-[submodule "the-book-of-secret-knowledge"]
-	path = the-book-of-secret-knowledge
+[submodule "The-book-of-secret-knowledge"]
+	path = The-book-of-secret-knowledge
 	url = https://github.com/trimstray/the-book-of-secret-knowledge
 [submodule "Web-Attack-Cheat-Sheet"]
 	path = Web-Attack-Cheat-Sheet
@@ -208,6 +208,6 @@
 [submodule "Windows-Red-Team-Cheat-Sheet"]
 	path = Windows-Red-Team-Cheat-Sheet
 	url = https://github.com/morph3/Windows-Red-Team-Cheat-Sheet
-[submodule "windows_reg"]
-	path = windows_reg
+[submodule "Windows_reg"]
+	path = Windows_reg
 	url = https://github.com/jmau111-org/windows_reg
