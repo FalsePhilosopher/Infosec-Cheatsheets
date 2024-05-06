@@ -103,6 +103,8 @@ https://github.com/sinfulz/JustGetDA
 
 https://github.com/sinfulz/JustTryHarder
 
+https://github.com/mattcone/markdown-guide/blob/master/cheat-sheet.md (markdown cheat sheet)
+
 https://github.com/aadityapurani/NodeJS-Red-Team-Cheat-Sheet
 
 https://github.com/InfoSecWarrior/Offensive-Pentesting-Host
@@ -144,5 +146,3 @@ https://github.com/matthieu-hackwitharts/Win32_Offensive_Cheatsheet
 https://github.com/morph3/Windows-Red-Team-Cheat-Sheet (This readme is now outdated, using https://notes.morph3.blog)
 
 https://github.com/jmau111-org/windows_reg
-
-https://github.com/mattcone/markdown-guide/blob/master/cheat-sheet.md (markdown cheat sheet)
