@@ -3,7 +3,9 @@
 If you want to data horde the rabbit hole of knowledge this provides then `git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets` it's about 9.2Gb.<br>
 To update them all `git pull --recurse-submodules`
 
-Feel free to PR any submodules you want to add to this yet another collection of collections of collections.
+Some of the links in the readme were not added as submodules, as they were collections of submodules themselves or just a random readme.
+
+Feel free to PR any submodules or links to add to this yet another collection of collections of collections.
 
 https://github.com/OriolOriolOriol/Active-Directory-Cheat-Sheet
 
