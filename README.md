@@ -119,6 +119,8 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 
 https://github.com/l3ickey/pentest-cheat-sheet
 
+https://github.com/koutto/pi-pwnbox-rogueap/wiki (WiFi Hacking Cheatsheets)
+
 https://github.com/expl0itabl3/Redsheet
 
 https://github.com/0xJs/RedTeaming_CheatSheet
