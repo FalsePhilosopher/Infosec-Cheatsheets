@@ -2,7 +2,6 @@
 
 If you want to data horde the rabbit hole of knowledge this provides then `git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets` it's about 11.5GB.<br>
 To update them all `git pull --recurse-submodules`
-#git submodule update --init --recursive --remote
 
 Alternatively for those on restricted data bandwidth and/or data limits, I have provided snapshot releases with a spilt zstd compressed archive that can be downloaded and extracted quickly on all cores providing a significant reduction in bandwidth(11.5GB compressed to 6.7GB) at the expense of temporarily needing an extra 6.7GB of storage(for the split archives to be joined locally before the spit archives are removed) ontop of the 11.5 requiring 18.2GB in total. The split archives can be pulled,reconstructed, and extracted with this one liner.
 ```
