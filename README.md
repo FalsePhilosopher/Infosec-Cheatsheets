@@ -157,3 +157,5 @@ https://github.com/matthieu-hackwitharts/Win32_Offensive_Cheatsheet
 https://github.com/morph3/Windows-Red-Team-Cheat-Sheet (This readme is now outdated, using https://notes.morph3.blog)
 
 https://github.com/jmau111-org/windows_reg
+
+https://github.com/kkrypt0nn/wordlists
