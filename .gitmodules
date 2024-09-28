@@ -91,9 +91,6 @@
 [submodule "Cheatsheets"]
 	path = Cheatsheets
 	url = https://github.com/cheat/cheatsheets
-[submodule "Cheat.sh"]
-	path = Cheat.sh
-	url = https://github.com/chubin/cheat.sh
 [submodule "Chsheets"]
 	path = Chsheets
 	url = https://github.com/OfWolfAndMan/chsheets
