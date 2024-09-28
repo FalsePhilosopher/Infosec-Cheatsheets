@@ -1,9 +1,16 @@
 # Infosec-Cheatsheets
 
-If you want to data horde the rabbit hole of knowledge this provides then `git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets` it's about 9.2Gb.<br>
+If you want to data horde the rabbit hole of knowledge this provides then `git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets` it's about 7.6Gb.<br>
 To update them all `git pull --recurse-submodules`
 
-Some of the links in the readme were not added as submodules, as they were collections of submodules themselves or just a random readme.
+Alternatively I have provided releases with a spilt zstd compressed archive that can be downloaded and extracted on all cores providing a significant reduction in bandwidth/time that can grabbed with this one liner.
+```
+wget -q -O - https://github.com/FalsePhilosopher/Infosec-Cheatsheets/releases/latest/download/zst.sh | bash
+```
+Depends on `zstd` and `gh` with a configured auth token.
+
+---
+Some of the links in the readme were not added as submodules, as they were collections of submodules themselves.
 
 Feel free to PR any submodules or links to add to this yet another collection of collections of collections.
 
