@@ -3,7 +3,7 @@
 If you want to data horde the rabbit hole of knowledge this provides then `git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets` it's about 7.6Gb.<br>
 To update them all `git pull --recurse-submodules`
 
-Alternatively I have provided releases with a spilt zstd compressed archive that can be downloaded and extracted on all cores providing a significant reduction in bandwidth/time that can grabbed with this one liner.
+Alternatively I have provided releases with a spilt zstd compressed archive that can be downloaded and extracted on all cores providing a significant reduction in bandwidth that can grabbed with this one liner.
 ```
 wget -q -O - https://raw.githubusercontent.com/FalsePhilosopher/Infosec-Cheatsheets/refs/heads/main/zst.sh | bash
 ```
