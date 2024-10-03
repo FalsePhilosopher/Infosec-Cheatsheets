@@ -1,9 +1,9 @@
 # Infosec-Cheatsheets
 
-If you want to data horde the rabbit hole of knowledge this provides then `git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets` it's about 11.5GB.<br>
+If you want to data horde the rabbit hole of knowledge this provides then `git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets` it's about 12GB.<br>
 To update them all `git submodule update --init --recursive --remote --rebase`
 
-Alternatively for those on restricted data bandwidth and/or data limits, I have provided snapshot releases with a spilt zstd compressed archive that can be downloaded and extracted quickly on all cores providing a significant reduction in bandwidth(11.5GB compressed to 6.7GB) at the expense of temporarily needing an extra 6.7GB of storage(for the split archives to be joined locally before the spit archives are removed) ontop of the 11.5 requiring 18.2GB in total. The split archives can be pulled,reconstructed, and extracted with this one liner.
+Alternatively for those on restricted data bandwidth and/or data limits, I have provided snapshot releases with a spilt zstd compressed archive that can be downloaded and extracted quickly on all cores providing a significant reduction in bandwidth(12GB with the .get folder, stripped/compressed to 2.4GB). It temporarily requires 9.5GB HD space for the archive+files ending with 6.9GB in total. The split archives can be pulled, reconstructed, gpg checked, extracted, and BLAKE2 checked with this one liner.
 ```
 wget -q -O - https://raw.githubusercontent.com/FalsePhilosopher/Infosec-Cheatsheets/refs/heads/main/zst.sh | bash
 ```
