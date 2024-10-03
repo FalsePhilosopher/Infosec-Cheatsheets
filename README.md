@@ -14,12 +14,10 @@ Alternatively for those on restricted data bandwidth and/or data limits, I have 
 ```
 cd /tmp/
 gh release download -p 'Infosec-Cheatsheets.tar.zst*' -R FalsePhilosopher/Infosec-Cheatsheets
-cat /tmp/Infosec-Cheatsheets.tar.zst* > /tmp/Infosec-Cheatsheets.tar.zst
-rm Infosec-Cheatsheets.tar.zsta*
-tar --use-compress-program "zstd -d -T0" -xvf "Infosec-Cheatsheets.tar.zst" --directory $HOME/Downloads
-rm Infosec-Cheatsheets.tar.zst
+cat Infosec-Cheatsheets.tar.zst* | tar -xvf - --use-compress-program=unzstd --directory $HOME/Downloads
+rm Infosec-Cheatsheets.tar.zst*
 cd $HOME/Downloads/Infosec-Cheatsheets/
-b2sum -oRESULTS -c $HOME/Downloads/Infosec-Cheatsheets/BLAKE2SUMS && echo "ALL OK" || echo "WOW! Something fishy's going on"
+b2sum -oRESULTS -c BLAKE2SUMS && echo "ALL OK" || echo "WOW! Something fishy's going on"
 ```
 Or use this one liner.
 ```
