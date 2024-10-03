@@ -7,7 +7,7 @@
 # cd ..
 # tar --use-compress-program "zstd -T0 -19" -cvf Infosec-Cheatsheets.tar.zst Infosec-Cheatsheets
 # gpg --sign Infosec-Cheatsheets.tar.zst
-# split -b 1999M Infosec-Cheatsheets.tar.zst Infosec-Cheatsheets.tar.zst && split -b 1999M Infosec-Cheatsheets.tar.zst.gpg Infosec-Cheatsheets.tar.zst.gpg
+# split -b 1996M Infosec-Cheatsheets.tar.zst Infosec-Cheatsheets.tar.zst && split -b 1996M Infosec-Cheatsheets.tar.zst.gpg Infosec-Cheatsheets.tar.zst.gpg
 
 
 cd /tmp/
