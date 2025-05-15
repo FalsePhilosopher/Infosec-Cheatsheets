@@ -1,4 +1,4 @@
-name: Monthly Backup
+name: Monthly Snapshot
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     - cron: '0 0 1 * *'  # Runs at 00:00 UTC on the 1st of every month
 
 jobs:
-  backup:
+  snapshot:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,27 +22,27 @@ jobs:
     - name: Install zstd/rsync
       run: sudo apt-get update && sudo apt-get install -y zstd rsync
 
-    - name: Create a temporary directory for backup
+    - name: Create a temporary directory for snapshot
       run: |
-        mkdir -p /tmp/repo-backup
-        rsync -av --exclude='.git' --exclude='.gitmodules' --exclude='.github' ./ /tmp/repo-backup/
+        mkdir -p /tmp/repo-snapshot
+        rsync -av --exclude='.git' --exclude='.gitmodules' --exclude='.github' ./ /tmp/repo-snapshot/
         rm -rf *
-        
-    - name: Create tar.zst backup
+
+    - name: Create tar.zst snapshot
       run: |
-        cd /tmp/repo-backup
-        tar -I 'zstd -T0 -19' -cvf "$GITHUB_WORKSPACE/repo-backup-${{ steps.date.outputs.date }}.tar.zst" *
+        cd /tmp/repo-snapshot
+        tar -I 'zstd -T0 -19' -cvf "$GITHUB_WORKSPACE/repo-snapshot-${{ steps.date.outputs.date }}.tar.zst" *
         
-    - name: Upload backup artifact
+    - name: Upload snapshot artifact
       uses: actions/upload-artifact@v4
       with:
-        name: repo-backup
-        path: repo-backup-${{ steps.date.outputs.date }}.tar.zst
+        name: repo-snapshot
+        path: repo-snapshot-${{ steps.date.outputs.date }}.tar.zst
 
     - name: Check if archive > 2GB and split if needed
       id: check_size
       run: |
-        file="repo-backup-${{ steps.date.outputs.date }}.tar.zst"
+        file="repo-snapshot-${{ steps.date.outputs.date }}.tar.zst"
         max_size=$((2 * 1024 * 1024 * 1024))  # 2GB in bytes
         actual_size=$(stat -c%s "$file")
         if [ "$actual_size" -ge "$max_size" ]; then
@@ -61,9 +61,9 @@ jobs:
           Automated snapshot for ${{ steps.date.outputs.date }}.
           Note: If archive was split due to size >2GB use cat to join them together
           ```
-          cat repo-backup-${{ steps.date.outputs.date }}.tar.zst.* > combined-${{ steps.date.outputs.date }}.tar.zst
+          cat repo-snapshot-${{ steps.date.outputs.date }}.tar.zst.* > combined-${{ steps.date.outputs.date }}.tar.zst
           ```
         files: |
-          ${{ steps.check_size.outputs.split == 'true' && format('repo-backup-{0}.tar.zst.*', steps.date.outputs.date) || format('repo-backup-{0}.tar.zst', steps.date.outputs.date) }}
+          ${{ steps.check_size.outputs.split == 'true' && format('repo-snapshot-{0}.tar.zst.*', steps.date.outputs.date) || format('repo-snapshot-{0}.tar.zst', steps.date.outputs.date) }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
