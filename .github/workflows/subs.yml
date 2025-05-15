@@ -1,4 +1,4 @@
-name: Monthly Submodule Update
+name: Weekly Submodule Update
 
 on:
   schedule:
