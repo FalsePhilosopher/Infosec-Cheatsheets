@@ -20,12 +20,16 @@ jobs:
         run: |
           git submodule update --recursive --remote
 
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Commit and push changes
         run: |
           if git diff --quiet; then
             echo "No submodule updates."
           else
-            git add .
             git commit -am "chore: weekly submodule update"
             git push
           fi
