@@ -39,12 +39,6 @@ jobs:
         name: repo-backup
         path: repo-backup-${{ steps.date.outputs.date }}.tar.zst
 
-    - name: Upload backup artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: repo-backup
-        path: repo-backup-${{ steps.date.outputs.date }}.tar.zst
-
     - name: Check if archive > 2GB and split if needed
       id: check_size
       run: |
@@ -65,7 +59,10 @@ jobs:
         tag_name: "backup-${{ steps.date.outputs.date }}"
         body: |
           Automated backup for ${{ steps.date.outputs.date }}.
-          $(if [[ "${{ steps.check_size.outputs.split }}" == "true" ]]; then echo "Note: Archive was split due to size >2GB."; fi)
+          Note: If archive was split due to size >2GB use cat to cat to join them together
+          ```
+          cat repo-backup-${{ steps.date.outputs.date }}.tar.zst.* > combined.tar.zst
+          ```
         files: |
           ${{ steps.check_size.outputs.split == 'true' && format('repo-backup-{0}.tar.zst.*', steps.date.outputs.date) || format('repo-backup-{0}.tar.zst', steps.date.outputs.date) }}
       env:
