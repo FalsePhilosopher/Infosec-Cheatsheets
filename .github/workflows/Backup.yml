@@ -28,7 +28,7 @@ jobs:
         rsync -av --exclude='.git' --exclude='.gitmodules' --exclude='.github' ./ /tmp/repo-backup/
         rm -rf *
         
-    - name: Create tar.zst backup excluding .git folders
+    - name: Create tar.zst backup
       run: |
         cd /tmp/repo-backup
         tar -I 'zstd -T0 -19' -cvf "$GITHUB_WORKSPACE/repo-backup-${{ steps.date.outputs.date }}.tar.zst" *
@@ -58,10 +58,10 @@ jobs:
         name: "Snapshot ${{ steps.date.outputs.date }}"
         tag_name: "Snapshot-${{ steps.date.outputs.date }}"
         body: |
-          Automated backup for ${{ steps.date.outputs.date }}.
+          Automated snapshot for ${{ steps.date.outputs.date }}.
           Note: If archive was split due to size >2GB use cat to cat to join them together
           ```
-          cat repo-backup-${{ steps.date.outputs.date }}.tar.zst.* > combined.tar.zst
+          cat repo-backup-${{ steps.date.outputs.date }}.tar.zst.* > combined-${{ steps.date.outputs.date }}.tar.zst
           ```
         files: |
           ${{ steps.check_size.outputs.split == 'true' && format('repo-backup-{0}.tar.zst.*', steps.date.outputs.date) || format('repo-backup-{0}.tar.zst', steps.date.outputs.date) }}
