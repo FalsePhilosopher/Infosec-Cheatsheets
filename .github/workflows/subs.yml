@@ -18,8 +18,7 @@ jobs:
 
       - name: Update all submodules
         run: |
-          git submodule foreach --recursive git fetch --all
-          git submodule update --remote --merge --strategy-option=theirs
+          git submodule update --init --recursive --remote --rebase
 
       - name: Commit and push changes
         run: |
