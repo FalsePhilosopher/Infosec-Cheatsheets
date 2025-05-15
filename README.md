@@ -10,18 +10,12 @@ To update them all.
 ```
 git submodule update --init --recursive --remote --rebase`
 ```
-Alternatively for those on restricted data bandwidth and/or data limits, I have provided snapshot releases with a spilt zstd compressed archive that can be downloaded and extracted quickly on all cores providing a significant reduction in bandwidth(12GB with the .get folder, stripped/compressed to 2.4GB). It temporarily requires 9.5GB HD space for the archive+files ending with 6.9GB in total. The split archives can be pulled, reconstructed, extracted, and BLAKE2 checked with
-```
+Alternatively for those on restricted data bandwidth and/or data limits, I have provided snapshot releases with a spilt zstd compressed archive that can be downloaded and extracted quickly on all cores providing a significant reduction in bandwidth(12GB with the .get folder, stripped/compressed to 2.4GB). It temporarily requires 9.5GB HD space for the archive+files ending with 6.9GB in total. The split archives can be pulled, reconstructed, and extracted with
+``` 
 cd /tmp/
-gh release download -p 'Infosec-Cheatsheets.tar.zst*' -R FalsePhilosopher/Infosec-Cheatsheets
-cat Infosec-Cheatsheets.tar.zst* | tar -xvf - --use-compress-program=unzstd --directory $HOME/Downloads
-rm Infosec-Cheatsheets.tar.zst*
-cd $HOME/Downloads/Infosec-Cheatsheets/
-b2sum -oRESULTS -c BLAKE2SUMS && echo "ALL OK" || echo "WOW! Something fishy's going on"
-```
-Or use this one liner.
-```
-wget -q -O - https://raw.githubusercontent.com/FalsePhilosopher/Infosec-Cheatsheets/refs/heads/main/zst.sh | bash
+gh release download -p 'snapshot-*.tar.zst.*' -R FalsePhilosopher/Infosec-Cheatsheets
+cat snapshot-*.tar.zst.* | tar -xvf - --use-compress-program=unzstd --directory $HOME/Downloads
+rm snapshot-*.tar.zst.*
 ```
 Depends on `zstd` and `gh` with a configured auth token, extracts to `$HOME/Downloads`.
 
