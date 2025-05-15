@@ -25,6 +25,6 @@ jobs:
           if git diff --quiet; then
             echo "No submodule updates."
           else
-            git commit -am "chore: monthly submodule update"
+            git commit -am "chore: weekly submodule update"
             git push
           fi
