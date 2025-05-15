@@ -55,8 +55,8 @@ jobs:
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v2
       with:
-        name: "Backup ${{ steps.date.outputs.date }}"
-        tag_name: "backup-${{ steps.date.outputs.date }}"
+        name: "Snapshot ${{ steps.date.outputs.date }}"
+        tag_name: "Snapshot-${{ steps.date.outputs.date }}"
         body: |
           Automated backup for ${{ steps.date.outputs.date }}.
           Note: If archive was split due to size >2GB use cat to cat to join them together
