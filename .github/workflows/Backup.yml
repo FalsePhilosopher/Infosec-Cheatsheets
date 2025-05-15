@@ -59,7 +59,7 @@ jobs:
         tag_name: "Snapshot-${{ steps.date.outputs.date }}"
         body: |
           Automated snapshot for ${{ steps.date.outputs.date }}.
-          Note: If archive was split due to size >2GB use cat to cat to join them together
+          Note: If archive was split due to size >2GB use cat to join them together
           ```
           cat repo-backup-${{ steps.date.outputs.date }}.tar.zst.* > combined-${{ steps.date.outputs.date }}.tar.zst
           ```
