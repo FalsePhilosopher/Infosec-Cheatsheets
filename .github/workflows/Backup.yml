@@ -31,18 +31,18 @@ jobs:
     - name: Create tar.zst snapshot
       run: |
         cd /tmp/snapshot
-        tar -I 'zstd -T0 -19' -cvf "$GITHUB_WORKSPACE/snapshot-${{ steps.date.outputs.date }}.tar.zst" *
+        tar -I 'zstd -T0 -19' -cvf "$GITHUB_WORKSPACE/Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst" *
         
     - name: Upload snapshot artifact
       uses: actions/upload-artifact@v4
       with:
         name: snapshot
-        path: snapshot-${{ steps.date.outputs.date }}.tar.zst
+        path: Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst
 
     - name: Check if archive > 2GB and split if needed
       id: check_size
       run: |
-        file="snapshot-${{ steps.date.outputs.date }}.tar.zst"
+        file="Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst"
         max_size=$((2 * 1024 * 1024 * 1024))  # 2GB in bytes
         actual_size=$(stat -c%s "$file")
         if [ "$actual_size" -ge "$max_size" ]; then
@@ -61,7 +61,7 @@ jobs:
           Automated snapshot for ${{ steps.date.outputs.date }}.
           Note: If archive was split due to size >2GB use cat to join them together
           ```
-          cat snapshot-${{ steps.date.outputs.date }}.tar.zst.* > snapshot-${{ steps.date.outputs.date }}.tar.zst
+          cat Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst.* > Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst
           ```
         files: |
           ${{ steps.check_size.outputs.split == 'true' && format('snapshot-{0}.tar.zst.*', steps.date.outputs.date) || format('snapshot-{0}.tar.zst', steps.date.outputs.date) }}
