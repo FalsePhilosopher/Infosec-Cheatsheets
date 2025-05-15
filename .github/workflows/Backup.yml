@@ -59,9 +59,11 @@ jobs:
         tag_name: "Snapshot-${{ steps.date.outputs.date }}"
         body: |
           Automated snapshot for ${{ steps.date.outputs.date }}.
-          Note: If archive was split due to size >2GB use cat to join them together
           ```
-          cat Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst.* > Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst
+          cd /tmp/
+          gh release download -p 'Infosec-Cheatsheets-*.tar.zst.*' -R FalsePhilosopher/Infosec-Cheatsheets
+          cat Infosec-Cheatsheets-*.tar.zst.* | tar -xvf - --use-compress-program=unzstd --directory $HOME/Downloads
+          rm Infosec-Cheatsheets-*.tar.zst.*
           ```
         files: |
           ${{ steps.check_size.outputs.split == 'true' && format('Infosec-Cheatsheets-{0}.tar.zst.*', steps.date.outputs.date) || format('Infosec-Cheatsheets-{0}.tar.zst', steps.date.outputs.date) }}
