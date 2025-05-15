@@ -18,13 +18,14 @@ jobs:
 
       - name: Update all submodules
         run: |
-          git submodule update --init --recursive --remote --rebase
+          git submodule update --remote --merge
 
       - name: Commit and push changes
         run: |
           if git diff --quiet; then
             echo "No submodule updates."
           else
+            git add .
             git commit -am "chore: weekly submodule update"
             git push
           fi
