@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 0 1 * *'  # Runs at 00:00 UTC on the 1st of every month
 
+env:
+  REPO_NAME: Infosec-Cheatsheets
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest
@@ -19,8 +22,12 @@ jobs:
       id: date
       run: echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
 
-    - name: Install zstd/rsync
-      run: sudo apt-get update && sudo apt-get install -y zstd rsync
+    - name: Install zeekstd
+      run: |
+        git clone https://github.com/rorosen/zeekstd.git
+        cd zeekstd
+        cargo build -p zeekstd_cli --release
+        sudo cp ./target/release/zeekstd /usr/local/bin/
 
     - name: Create a temporary directory for snapshot
       run: |
@@ -28,21 +35,21 @@ jobs:
         rsync -av --exclude='.git' --exclude='.gitmodules' --exclude='.github' ./ /tmp/snapshot/
         rm -rf *
 
-    - name: Create tar.zst snapshot
+    - name: Create tzst snapshot
       run: |
         cd /tmp/snapshot
-        tar -I 'zstd -T0 -19' -cvf "$GITHUB_WORKSPACE/Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst" *
+        tar -I 'zeekstd -l 19' -cvf "$GITHUB_WORKSPACE/${{ env.REPO_NAME }}-${{ steps.date.outputs.date }}.tzst" *
         
     - name: Upload snapshot artifact
       uses: actions/upload-artifact@v4
       with:
         name: snapshot
-        path: Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst
+        path: ${{ env.REPO_NAME }}-${{ steps.date.outputs.date }}.tzst
 
     - name: Check if archive > 2GB and split if needed
       id: check_size
       run: |
-        file="Infosec-Cheatsheets-${{ steps.date.outputs.date }}.tar.zst"
+        file="${{ env.REPO_NAME }}-${{ steps.date.outputs.date }}.tzst"
         max_size=$((2 * 1024 * 1024 * 1024))  # 2GB in bytes
         actual_size=$(stat -c%s "$file")
         if [ "$actual_size" -ge "$max_size" ]; then
@@ -61,11 +68,11 @@ jobs:
           Automated snapshot for ${{ steps.date.outputs.date }}.
           ```
           cd /tmp/
-          gh release download -p 'Infosec-Cheatsheets-*.tar.zst.*' -R FalsePhilosopher/Infosec-Cheatsheets
-          cat Infosec-Cheatsheets-*.tar.zst.* | tar -xvf - --use-compress-program=unzstd --directory $HOME/Downloads
-          rm Infosec-Cheatsheets-*.tar.zst.*
+          gh release download -p '${{ env.REPO_NAME }}-*.tzst.*' -R ${{ github.repository }}
+          cat ${{ env.REPO_NAME }}-*.tzst.* | tar -xvf - --use-compress-program=unzstd --directory $HOME/Downloads
+          rm ${{ env.REPO_NAME }}-*.tzst.*
           ```
         files: |
-          ${{ steps.check_size.outputs.split == 'true' && format('Infosec-Cheatsheets-{0}.tar.zst.*', steps.date.outputs.date) || format('Infosec-Cheatsheets-{0}.tar.zst', steps.date.outputs.date) }}
+          ${{ steps.check_size.outputs.split == 'true' && format('{0}-{1}.tzst.*', env.REPO_NAME, steps.date.outputs.date) || format('{0}-{1}.tzst', env.REPO_NAME, steps.date.outputs.date) }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
