@@ -1,20 +1,16 @@
 # Infosec-Cheatsheets
 
-If you want to data horde the rabbit hole of knowledge this provides then
+If you want to data horde the rabbit hole of knowledge this provides, there is a [zeekstd](https://github.com/rorosen/zeekstd) compressed archive in the releases that can be mounted with [ratarmount](https://github.com/mxmlnkn/ratarmount). It's about 2.5GB of download and depends on having `gh` already configured with an auth token. (The .git folder is stripped in the process to save on storage/bandwidth, so if you want to pull monthly updates then clone the repo instead.) 
+```
+gh release download -p 'Infosec-Cheatsheets-*.tzst.*' -R FalsePhilosopher/Infosec-Cheatsheets
+cat Infosec-Cheatsheets-*.tzst.* > Infosec-Cheatsheets.tzst
+rm Infosec-Cheatsheets-*.tzst.*
+ratarmount Infosec-Cheatsheets.tzst
+```
+Or do your standard clone, it's about 12GB of download/storage.
 ```
 git clone --recursive --jobs 8 https://github.com/FalsePhilosopher/Infosec-Cheatsheets
 ```
-it's about 12GB in total.  
-
-Alternatively for those on restricted data bandwidth and/or data limits, I have provided snapshot releases with a spilt zstd compressed archive that can be downloaded and extracted quickly on all cores providing a significant reduction in bandwidth(12GB with the .get folder, stripped/compressed to 2.4GB). It temporarily requires 9.5GB HD space for the archive+files ending with 6.9GB in total. The split archives can be pulled, reconstructed, and extracted with
-``` 
-cd /tmp/
-gh release download -p 'Infosec-Cheatsheets-*.tar.zst.*' -R FalsePhilosopher/Infosec-Cheatsheets
-cat Infosec-Cheatsheets-*.tar.zst.* | tar -xvf - --use-compress-program=unzstd --directory $HOME/Downloads
-rm Infosec-Cheatsheets-*.tar.zst.*
-```
-Depends on `zstd` and `gh` with a configured auth token, extracts to `$HOME/Downloads`.
-
 ---
 Some of the links in the readme were not added as submodules, as they were collections of submodules themselves.
 
