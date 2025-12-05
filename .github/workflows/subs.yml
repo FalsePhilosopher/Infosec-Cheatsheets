@@ -30,6 +30,6 @@ jobs:
           if git diff --quiet; then
             echo "No submodule updates."
           else
-            git commit -am "chore: weekly submodule update"
+            git commit -am "Monthly submodule update"
             git push
           fi
