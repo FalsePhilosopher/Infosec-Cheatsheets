@@ -1,6 +1,6 @@
 # Infosec-Cheatsheets
 
-If you want to data horde the rabbit hole of knowledge this provides, there is a [zeekstd](https://github.com/rorosen/zeekstd) compressed archive in the releases that can be mounted with [ratarmount](https://github.com/mxmlnkn/ratarmount). It's about 2.5GB of download and depends on having `gh` already configured with an auth token. (The .git folder is stripped in the process to save on storage/bandwidth, so if you want to pull weekly updates then clone the repo instead.) 
+If you want to data horde the rabbit hole of knowledge this provides, there is a [zeekstd](https://github.com/rorosen/zeekstd) compressed archive in the releases that can be mounted with [ratarmount](https://github.com/mxmlnkn/ratarmount). It's about 2.5GB of download and depends on having `gh` already configured with an auth token. (The .git folder is stripped in the process to save on storage/bandwidth, so if you want to pull monthly updates then clone the repo instead.) 
 ```
 gh release download -p 'Infosec-Cheatsheets-*.tzst.*' -R FalsePhilosopher/Infosec-Cheatsheets
 arc=$(ls Infosec-Cheatsheets-*.tzst.* | head -n 1 | sed 's/\.[^.]*$//')
