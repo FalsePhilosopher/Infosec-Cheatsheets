@@ -103,9 +103,6 @@
 [submodule "CobaltStrike_RedTeam_CheatSheet"]
 	path = CobaltStrike_RedTeam_CheatSheet
 	url = https://github.com/wsummerhill/CobaltStrike_RedTeam_CheatSheet
-[submodule "Command-injection-payload-list"]
-	path = Command-injection-payload-list
-	url = https://github.com/payloadbox/command-injection-payload-list
 [submodule "DefaultCreds-cheat-sheet"]
 	path = DefaultCreds-cheat-sheet
 	url = https://github.com/ihebski/DefaultCreds-cheat-sheet
