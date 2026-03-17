@@ -1,9 +1,8 @@
-name: Monthly Submodule Update
+name: Bi-Weekly Submodule Update
 
 on:
   schedule:
-    - cron: '0 0 1 * *' # Runs at 00:00 UTC on the first day of every month
-  workflow_dispatch:
+    - cron: '0 0 1,15 * *'
 
 jobs:
   update-submodules:
