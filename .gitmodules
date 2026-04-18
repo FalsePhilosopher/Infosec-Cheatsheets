@@ -202,9 +202,6 @@
 [submodule "Windows-Red-Team-Cheat-Sheet"]
 	path = Windows-Red-Team-Cheat-Sheet
 	url = https://github.com/morph3/Windows-Red-Team-Cheat-Sheet
-[submodule "Windows_reg"]
-	path = Windows_reg
-	url = https://github.com/jmau111-org/windows_reg
 [submodule "Wordlists"]
 	path = Wordlists
 	url = https://github.com/kkrypt0nn/wordlists
